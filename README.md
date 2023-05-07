@@ -14,7 +14,11 @@ npm install adults
 ## Usage
 
 ```typescript
-const { addWords, isBad} from 'adults';
+// TypeScript Usage
+import { addWords, isBad } from 'adults';
+
+// JavaScript Usage
+const { addWords, isBad} = require('adults');
 
 addWords('some', 'custom', 'word'); // add your list of custom words here
 
