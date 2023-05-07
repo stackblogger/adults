@@ -1,7 +1,7 @@
 {
   "name": "adults",
   "version": "1.0.5",
-  "description": "Read and Parse Parent Package Json file in TypeScript.",
+  "description": "A library to detect bad words in a given content.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
