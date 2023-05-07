@@ -1,6 +1,6 @@
 {
   "name": "adults",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Read and Parse Parent Package Json file in TypeScript.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -67,6 +67,6 @@
     "node": ">= 16.0.0"
   },
   "dependencies": {
-    "adults-list": "^1.0.2"
+    "adults-list": "^1.0.3"
   }
 }
