@@ -1,0 +1,25 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    name: Build and Test Project before use.
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: npm install
+        uses: bahmutov/npm-install@v1
+
+      - name: run lint
+        run: npm run lint
+
+      - name: run tests
+        run: npm run test --ci --coverage --maxWorkers=2

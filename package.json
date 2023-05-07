@@ -1,0 +1,66 @@
+{
+  "name": "adults",
+  "version": "1.0.0",
+  "description": "Read and Parse Parent Package Json file in TypeScript.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "__tests__",
+    "readme.md"
+  ],
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "rollup --config",
+    "lint": "eslint .",
+    "dev": "rollup --config && node dist/index.js",
+    "prepublish": "jest --coverage && eslint . && rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackblogger/adults.git"
+  },
+  "keywords": [
+    "node.js",
+    "javascript",
+    "typescript",
+    "read",
+    "parse",
+    "package.json",
+    "parent",
+    "custom-lib",
+    "find"
+  ],
+  "author": {
+    "name": "StackBlogger (Jameer Khan)",
+    "email": "jimcute8879@gmail.com",
+    "url": "https://stackblogger.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stackblogger/adults/issues"
+  },
+  "homepage": "https://github.com/stackblogger/adults#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.1.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "ts-jest": "^28.0.7"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "engines": {
+    "node": ">= 16.0.0"
+  }
+}
