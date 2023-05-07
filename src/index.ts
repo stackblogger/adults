@@ -1,1 +1,1 @@
-export * from './plugin/package-json-finder';
+export * from './plugin/adults';

@@ -1,6 +1,6 @@
 {
   "name": "adults",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read and Parse Parent Package Json file in TypeScript.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -19,18 +19,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stackblogger/adults.git"
+    "url": "https://github.com/stackblogger/adults.git"
   },
   "keywords": [
-    "node.js",
-    "javascript",
+    "badwords",
+    "bad-words",
     "typescript",
-    "read",
-    "parse",
-    "package.json",
-    "parent",
-    "custom-lib",
-    "find"
+    "javascript",
+    "adult",
+    "remove",
+    "search",
+    "finder",
+    "find",
+    "xxx",
+    "pornographic",
+    "nfsw"
   ],
   "author": {
     "name": "StackBlogger (Jameer Khan)",
@@ -62,5 +65,8 @@
   },
   "engines": {
     "node": ">= 16.0.0"
+  },
+  "dependencies": {
+    "adults-list": "^1.0.2"
   }
 }

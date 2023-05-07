@@ -15,7 +15,8 @@ module.exports = {
     'linebreak-style': 0,
     'comma-dangle': ['error', 'never'],
     'import/prefer-default-export': 'off',
-    'import/export': 0
+    'import/export': 0,
+    'no-underscore-dangle': 0
   },
   ignorePatterns: ['dist', 'node_modules', '.eslintrc.js', 'rollup.config.js', '__tests__', 'coverage']
 };

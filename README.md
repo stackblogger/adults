@@ -3,9 +3,7 @@
 
 # adults
 
-A plugin to read and parse parent package.json file as JSON object in TypeScript Node.Js. It is useful when you have a library that requires some attributes from parent Package.Json file. Simply install this library in your parent Node.Js JavaScript/TypeScript based application and call the function.
-
-The objective of the plugin is to read the `package.json` file contents as a valid JSON objects wherever you call the function. It will read the `package.json` file of the caller location.
+A simple JavaScript / TypeScript library to detect bad words. Use it with your custom list of bad words.
 
 ## Installation
 
@@ -13,91 +11,24 @@ The objective of the plugin is to read the `package.json` file contents as a val
 npm install adults
 ```
 
-## Default Usage
-
-Once the plugin is installed, import `packageJson` function from `adults` package anywehere in your project and assign the JSON object in a variable.
+## Usage
 
 ```typescript
-import { packageJson } from 'adults';
+const { addWords, isBad} from 'adults';
 
-const contents = packageJson();
+addWords('some', 'custom', 'word'); // add your list of custom words here
 
-console.log(contents);
+const isBadWord = isBad('This is a sample xxx content', 'Some more custom word content here');
 
-/*
-  {
-    "name": "adults",
-    "version": "0.1.0",
-    "description": "Read and Parse Parent Package Json file in TypeScript.",
-    "scripts": {
-      "test": "jest --coverage",
-      "lint": "eslint ."
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/stackblogger/adults.git"
-    },
-    "engines": {
-      "node": ">= 16.0.0"
-    }
-  }
-*/
-```
+console.log(isBadWord);
 
-## Use your own custom interface to read json values
+// OUTPUT true
 
-If you don't want to use the plugin's default interface then you can have your own interface and provide it as prefix at the time of `packageJson` function call. More details here-
+const isItBad = isBad('Hey StackBlogger!');
 
-```typescript
-import { packageJson } from 'adults';
+console.log(isItBad);
 
-interface PackageJsonContent {
-  name: string;
-  version: string;
-}
-
-const contents = <PackageJsonContent>packageJson();
-console.log(contents);
-
-/*
-  {
-    "name": "adults",
-    "version": "0.1.0"
-  }
-*/
-```
-
-## Read Package.Json from a custom directory
-
-You can also read the parsed `package.json` as JSON object from a custom directory. Simply pass the custom directory path in the function parameter.
-Here are more details with example-
-
-```typescript
-import { packageJson } from 'adults';
-
-const customPath = path.join('some-directory-here');
-const contents = packageJson(customPath);
-
-console.log(contents);
-
-/*
-  {
-    "name": "adults",
-    "version": "0.1.0",
-    "description": "Read and Parse Parent Package Json file in TypeScript.",
-    "scripts": {
-      "test": "jest --coverage",
-      "lint": "eslint ."
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/stackblogger/adults.git"
-    },
-    "engines": {
-      "node": ">= 16.0.0"
-    }
-  }
-*/
+// OUTPUT false
 ```
 
 ### License

@@ -3,6 +3,7 @@ import typescript from 'rollup-plugin-typescript2';
 
 export default {
   input: 'src/index.ts',
+  external: ['adults-list'],
   output: [
     {
       file: 'dist/index.js',
