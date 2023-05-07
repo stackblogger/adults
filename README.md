@@ -1,4 +1,4 @@
-[![npm-version]][npm] [![coveralls-status]][coveralls] ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/stackblogger/adults/master.yml?style=flat-square&logo=github&color=success)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/stackblogger/adults/master.yml?style=flat-square&logo=github&color=success)
 ![npm](https://img.shields.io/npm/v/adults?style=flat-square&color=success&logo=npm)
 
 # adults
