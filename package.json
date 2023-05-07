@@ -1,6 +1,6 @@
 {
   "name": "adults",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Read and Parse Parent Package Json file in TypeScript.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

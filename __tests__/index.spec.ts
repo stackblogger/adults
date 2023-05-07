@@ -4,7 +4,7 @@ import { BadWordHelper } from '../src/plugin/util';
 
 describe('Adults', () => {
   it('should detect as bad word', (done) => {
-    const isItBad = isBad('Hey fuck man');
+    const isItBad = isBad('Hey man sex.');
     expect(isItBad).toBe(true);
     done();
   });

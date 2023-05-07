@@ -7,7 +7,7 @@ export class BadWordHelper {
     return this._badWords;
   }
 
-  public static badWords(words: string[]): void {
+  public static addBadWords(words: string[]): void {
     words.map((word) => this._badWords.add(word));
   }
 
